@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Media } from "./media";
 
-const Content = styled.div`
+const Container = styled.div`
   margin: 0 auto;
   width: 1120px;
   ${Media.LG} {
@@ -15,7 +15,7 @@ const Content = styled.div`
   }
   ${Media.XS} {
     width: 100%;
-    margin: auto 24px;
+    margin: 0 24px;
   }
 `;
-export { Content };
+export { Container };

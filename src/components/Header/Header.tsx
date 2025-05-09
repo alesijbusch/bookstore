@@ -1,5 +1,5 @@
 import React from "react";
-import { Content } from "../../ui/base";
+import { Container } from "../../ui/base";
 import {
   HeaderWrapper,
   IconInner,
@@ -16,7 +16,7 @@ import { CartIcon, FavoritesIcon, UserIcon } from "../../assets";
 export const Header = () => {
   return (
     <StyledHeader>
-      <Content>
+      <Container>
         <HeaderWrapper>
           <Link to="/">
             <StyledLogo />
@@ -37,7 +37,7 @@ export const Header = () => {
             </IconInner>
           </IconWrapper>
         </HeaderWrapper>
-      </Content>
+      </Container>
     </StyledHeader>
   );
 };

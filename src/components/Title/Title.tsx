@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { StyledTitle } from "./style";
+import { StyledTitle } from "./styles";
 interface TitleProps {
   children: ReactNode;
 }

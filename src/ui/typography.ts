@@ -6,31 +6,28 @@ import { Media } from "./media";
 ///Inter = DIN Pro
 
 const H1 = css`
-  font-family: "Barlow", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 56px;
   ${Media.XS} {
     font-size: 32px;
   }
 `;
 const H2 = css`
-  font-family: "Barlow", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 40px;
   ${Media.XS} {
     font-size: 28px;
   }
 `;
 const H3 = css`
-  font-family: "Barlow", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 24px;
-  ${Media.XS} {
-    font-size: 24px;
-  }
 `;
 const S1 = css`
   font-family: "Manrope", sans-serif;
