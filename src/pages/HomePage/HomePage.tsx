@@ -13,7 +13,7 @@ export const HomePage = () => {
     fetch("https://api.itbook.store/1.0/search/js")
       .then((response) => response.json())
       .then(({ books }) => setBooks(books));
-  }, books);
+  }, [books]);
 
   return (
     <div>

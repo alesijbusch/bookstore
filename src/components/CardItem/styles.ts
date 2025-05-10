@@ -51,10 +51,10 @@ const Title = styled(Link)`
   color: ${Color.primary};
   text-decoration: none;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Ограничение в 2 строки */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-height: 64px; /* Фиксированная высота (2 строки) */
+  min-height: 64px;
 `;
 
 const SubTitle = styled.div`
@@ -67,10 +67,10 @@ const SubTitle = styled.div`
   margin-top: 8px;
   margin-bottom: 40px;
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* Ограничение в 2 строки */
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-height: 24px; /* Фиксированная высота (2 строки) */
+  min-height: 24px;
 `;
 const Price = styled.div`
   ${Typography.H3}
