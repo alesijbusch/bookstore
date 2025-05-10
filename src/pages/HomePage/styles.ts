@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Media } from "../../ui/media";
 
-const HomeWrapper = styled.section`
+const HomeWrapper = styled.div`
   margin-top: 48px;
   margin-bottom: 72px;
   ${Media.SM} {
