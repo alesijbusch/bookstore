@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { Media } from "../../ui/media";
+import { Color } from "../../ui/colors";
 
 const HomeWrapper = styled.div`
-  margin-top: 48px;
-  margin-bottom: 72px;
+  padding-top: 48px;
+  padding-bottom: 72px;
+  border-bottom: 1px solid ${Color.gray};
   ${Media.SM} {
-    margin-top: 36px;
-    margin-bottom: 56px;
+    padding-top: 36px;
+    padding-bottom: 56px;
   }
 `;
 
