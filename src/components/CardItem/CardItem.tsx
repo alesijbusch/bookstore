@@ -16,11 +16,11 @@ interface CardItemProps {
 
 export const CardItem = ({ book }: CardItemProps) => {
   return (
-    <StyledCardItem>
-      <CardImagesInner to="/">
+    <StyledCardItem to="/">
+      <CardImagesInner>
         <CardImage src={book.image} />
       </CardImagesInner>
-      <Title to="/">{book.title}</Title>
+      <Title>{book.title}</Title>
       <SubTitle>{book.subtitle}</SubTitle>
       <Price>{book.price}</Price>
     </StyledCardItem>

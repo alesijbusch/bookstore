@@ -4,8 +4,14 @@ import { Link } from "react-router";
 import { Typography } from "../../ui/typography";
 import { Media } from "../../ui/media";
 
-const StyledCardItem = styled.div`
+const StyledCardItem = styled(Link)`
   width: 352px;
+  text-decoration: none;
+  &:hover {
+    h2 {
+      color: ${Color.primaryLight};
+    }
+  }
   ${Media.LG} {
     width: 328px;
   }
@@ -16,7 +22,8 @@ const StyledCardItem = styled.div`
     width: 100%;
   }
 `;
-const CardImagesInner = styled(Link)`
+
+const CardImagesInner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +51,7 @@ const CardImage = styled.img`
     height: 203px;
   }
 `;
-const Title = styled(Link)`
+const Title = styled.h2`
   ${Typography.H3}
   text-transform: uppercase;
   line-height: 32px;
@@ -55,6 +62,7 @@ const Title = styled(Link)`
   -webkit-box-orient: vertical;
   overflow: hidden;
   min-height: 64px;
+  transition: 0.3s ease-in-out;
 `;
 
 const SubTitle = styled.div`
@@ -74,6 +82,8 @@ const SubTitle = styled.div`
 `;
 const Price = styled.div`
   ${Typography.H3}
+  color: ${Color.primary};
   line-height: 32px;
 `;
+
 export { StyledCardItem, CardImagesInner, CardImage, Title, SubTitle, Price };
