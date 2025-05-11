@@ -5,6 +5,7 @@ import { Title } from "../../components/Title/Title";
 import { HomeWrapper } from "./styles";
 import { CardList } from "../../components/CardList/CardList";
 import { Book } from "../../types/types";
+import { Pagination } from "../../components/Pagination/Pagination";
 
 export const HomePage = () => {
   const [books, setBooks] = useState<Book[]>([]);
@@ -23,6 +24,9 @@ export const HomePage = () => {
 
         <HomeWrapper>
           <CardList books={books} />
+        </HomeWrapper>
+        <HomeWrapper>
+          <Pagination />
         </HomeWrapper>
       </Container>
     </div>
