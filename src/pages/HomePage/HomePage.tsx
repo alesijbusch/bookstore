@@ -6,6 +6,7 @@ import { HomeWrapper } from "./styles";
 import { CardList } from "../../components/CardList/CardList";
 import { Book } from "../../types/types";
 import { Pagination } from "../../components/Pagination/Pagination";
+import { Footer } from "../../components/Footer/Footer";
 
 export const HomePage = () => {
   const [books, setBooks] = useState<Book[]>([]);
@@ -29,6 +30,7 @@ export const HomePage = () => {
           <Pagination />
         </HomeWrapper>
       </Container>
+      <Footer />
     </div>
   );
 };
