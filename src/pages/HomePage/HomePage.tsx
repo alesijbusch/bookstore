@@ -18,19 +18,15 @@ export const HomePage = () => {
   }, [books]);
 
   return (
-    <div>
-      <Header />
-      <Container>
-        <Title>New Releases Books</Title>
+    <Container>
+      <Title>New Releases Books</Title>
 
-        <HomeWrapper>
-          <CardList books={books} />
-        </HomeWrapper>
-        <HomeWrapper>
-          <Pagination />
-        </HomeWrapper>
-      </Container>
-      <Footer />
-    </div>
+      <HomeWrapper>
+        <CardList books={books} />
+      </HomeWrapper>
+      <HomeWrapper>
+        <Pagination />
+      </HomeWrapper>
+    </Container>
   );
 };
