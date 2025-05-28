@@ -25,7 +25,7 @@ import {
 import { Container } from "../../ui/base";
 import { useNavigate, useParams } from "react-router";
 import { BookDetail } from "../../types/types";
-import { ArrowBack } from "../../assets";
+import { ArrowBack, ImgNotFound } from "../../assets";
 
 interface Tab {
   title: string;
@@ -62,7 +62,7 @@ export const DetailsPage = () => {
         <DetailsMain>
           <DetailsImagesInner>
             <DetailsImages
-              src={book?.image}
+              src={book?.image || ImgNotFound}
               alt={book?.title || "Book cover"}
               title={book?.title}
             />

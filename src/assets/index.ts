@@ -7,6 +7,7 @@ import { ReactComponent as ArrowPrevIcon } from "./icons/arrow-prev.svg";
 import { ReactComponent as ArrowNextIcon } from "./icons/arrow-next.svg";
 import { ReactComponent as ArrowBack } from "./icons/arrow-left.svg";
 import Card from "./images/card.png";
+import ImgNotFound from "./images/image-not-found.png";
 
 export {
   Logo,
@@ -18,4 +19,5 @@ export {
   ArrowPrevIcon,
   ArrowNextIcon,
   ArrowBack,
+  ImgNotFound,
 };

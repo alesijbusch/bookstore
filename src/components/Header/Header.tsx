@@ -9,16 +9,17 @@ import {
   StyledHeader,
   StyledLogo,
 } from "./style";
-import { Link } from "react-router";
+import { Link, Route } from "react-router";
 import { InputSearch } from "../InputSearch/InputSearch";
 import { CartIcon, FavoritesIcon, UserIcon } from "../../assets";
+import { ROUTE } from "../../routes/routes";
 
 export const Header = () => {
   return (
     <StyledHeader>
       <Container>
         <HeaderWrapper>
-          <Link to="/">
+          <Link to={ROUTE.HOME}>
             <StyledLogo />
           </Link>
           <SearchForm>

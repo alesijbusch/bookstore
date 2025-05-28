@@ -11,6 +11,7 @@ import {
 import { Book } from "../../types/types";
 import { generatePath } from "react-router";
 import { ROUTE } from "../../routes/routes";
+import { ImgNotFound } from "../../assets";
 
 interface CardItemProps {
   book: Book;
@@ -20,7 +21,7 @@ export const CardItem = ({ book }: CardItemProps) => {
   return (
     <StyledCardItem to={generatePath(ROUTE.DETAILS, { isbn13: book.isbn13 })}>
       <CardImagesInner>
-        <CardImage src={book.image} />
+        <CardImage src={book.image || ImgNotFound} />
       </CardImagesInner>
       <Title>{book.title}</Title>
       <SubTitle>{book.subtitle}</SubTitle>
